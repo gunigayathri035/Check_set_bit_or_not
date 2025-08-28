@@ -1,1 +1,14 @@
-# Check_set_bit_or_not
+# using left shift operator     
+class Solution:
+    def checkKthBit(self, n, i):
+        # code here
+        if(n&(1<<i)!=0):
+            return True 
+        return False 
+# using right shift operator
+class Solution:
+    def checkKthBit(self, n, i):
+        # code here
+        if((n>>i)&1 == 0):
+            return False 
+        return True # Check_set_bit_or_not
